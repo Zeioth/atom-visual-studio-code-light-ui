@@ -1,0 +1,100 @@
+
+/* In this file you can find the values that i've changed.
+ * So you can just copy/paste this into your styless.less and start to hack. */
+
+
+.theme-atom-visual-studio-code-light-ui {
+
+  // ------------- Status bar -------------
+  .status-bar{
+    position: relative;
+    font-size: 0.97em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #007ACC;
+    span, a, a.inline-block{
+      color: white;
+    }
+  }
+
+  // --------------- Gutter ---------------
+  atom-text-editor .gutter, atom-text-editor::shadow .gutter {
+    background: transparent;
+    //margin-right:0.5em;
+  }
+
+  // ------------- Folder tree -------------
+  .tree-view {
+    font-size: 1.1em;
+    background-color: #F3F3F3;
+  }
+
+  // ----------- Terminal-plus -----------
+  atom-panel.bottom.tool-panel.panel-bottom{
+    background-color: #007ACC;
+    color: white;
+  }
+
+  div.terminal-plus.terminal-view{
+    background-color: #333333;
+  }
+
+  div.find-and-replace{
+    background-color: #202020;
+  }
+
+  // --------------- Linter ----------------
+  linter-panel{
+    color: black;
+    background-color: #F3F3F3;
+  }
+
+  .linter-tab{
+    color: black;
+  }
+
+  span.count{
+    color: black;
+  }
+
+  // -------------- Tool bar ---------------
+  .tool-bar {
+    background-color: #2C2C2C;
+    border: 0px solid #2C2C2C;
+    color: #2C2C2C;
+    padding-top: 1em;
+
+    button.tool-bar-btn {
+      background-color: #2C2C2C;
+      background-image: #2C2C2C;
+      border-color: #2C2C2C;
+      &:hover {
+        background: #2C2C2C;
+        border-color: white;
+      }
+    }
+
+    &.tool-bar-16px {
+      .tool-bar-size(16px * 2);
+    }
+    &.tool-bar-24px {
+      .tool-bar-size(24px * 2);
+    }
+    &.tool-bar-32px {
+      .tool-bar-size(32px * 2);
+    }
+
+    // Size monkey patched
+    .tool-bar-size(@size) {
+      .tool-bar-btn {
+        height: @size;
+        width: @size * 0.85;
+        &:before {
+          font-size: @size / 1.9;
+          line-height: @size;
+        }
+      }
+    }
+  }
+}
