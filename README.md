@@ -8,7 +8,7 @@ Made by [@Zeioth](https://twitter.com/Zeioth)
 
 ---
 
-![atom-visual-studio-code-light-ui](https://cloud.githubusercontent.com/assets/3357792/10628225/1c96779a-77c3-11e5-9b8a-1571defddfca.png)
+![atom-visual-studio-code-light-ui](https://cloud.githubusercontent.com/assets/3357792/10629108/57174d0a-77cc-11e5-93d4-98d0832d694a.png)
 
 ### Install your toolbar
 
