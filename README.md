@@ -58,6 +58,8 @@ You can't see the toolbar yet. To configure it, you must press ctrl+shift+p and 
     url: "http://localhost:8000"
     tooltip: "Debug Django Project"
     show: [ "Python", "HTML", "JavaScript", "CSS" ]
+    style:
+      color: "#FFFFFF"
   }
 ]
 
@@ -77,4 +79,4 @@ __My toolbar icons are too small!__
 You can edit the size of the icons in "Preferences > Packages > Tool-bar".
 
 __Something has an incorrect color or size?__
-Go to our Github repository, and open an issue uploading an image of your problem. I will fix it as soon as possible. Also, this theme is based on One Dark UI, so if you need further help, please refer to the documentation of said theme.
+Go to our Github repository, and open an issue uploading an image of your problem. I will fix it as soon as possible. Also, this theme is based on One Light UI, so if you need further help, please refer to the documentation of said theme.
