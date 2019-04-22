@@ -1,23 +1,22 @@
 
 atom-pane-container {
+
   atom-pane {
     position: relative;
-    padding-top: @ui-padding-pane;
-    padding-right: @ui-padding-pane;
+    border-right: 1px solid @base-border-color;
+    border-bottom: 1px solid @base-border-color;
 
     .item-views {
-      border: 1px solid @pane-item-border-color;
-      border-top: none;
+      // prevent atom-text-editor from leaking ouside might improve performance
+      overflow: hidden;
     }
   }
 
-  // make resize-handles fill the space
-  atom-pane-axis.horizontal > atom-pane-resize-handle {
-    width: @ui-padding-pane;
-    margin-left: -@ui-padding-pane;
-  }
-  atom-pane-axis.vertical > atom-pane-resize-handle {
-    height: @ui-padding-pane;
-    margin-top: 0;
-  }
+}
+
+// Hide right-most border
+atom-pane:only-child,
+atom-pane-axis.pane-row > atom-pane:last-child,
+atom-pane-axis.pane-column:last-child > atom-pane {
+  border-right: none;
 }
