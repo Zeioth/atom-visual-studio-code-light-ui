@@ -19,7 +19,7 @@
     "good"
   ],
   "license": "MIT",
-  "repository": "https://github.com/atom/atom",
+  "repository": "https://github.com/Zeioth/atom-visual-studio-code-light-ui",
   "main": "lib/main",
   "engines": {
     "atom": ">0.40.0"
